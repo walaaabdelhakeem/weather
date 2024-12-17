@@ -1,0 +1,268 @@
+@media screen and (max-width: 991px) {
+  .navbar-collapse.show .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav {
+    background: #262936;
+    list-style: none;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+  }
+  .navbar-collapse {
+    padding: 30px 0 0;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    border: 0;
+  }
+  .navbar-collapse .navbar-nav .nav-item {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .navbar-expand-lg .navbar-nav .nav-link:hover,
+  .navbar-expand-lg .navbar-nav .nav-link.active {
+    color: var(--color2);
+    border: 0;
+  }
+}
+
+:root {
+  --color1: #1e202b;
+  --color2: #009ad8;
+  --color3: #323544;
+  --color4: #262936;
+  --font1: "Roboto", sans-serif;
+  --font2: "Open Sans", serif;
+  --color-text: #bfc1c8;
+}
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+p,
+h1,
+small {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h5,
+div {
+  color: var(--color-text);
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-weather {
+  font-family: var(--font1);
+  background-color: var(--color1);
+}
+
+.logo h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.logo p {
+  font-size: 0.6rem;
+  line-height: 0.9rem;
+  font-weight: 300;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+.nav-link {
+  color: white;
+  border-radius: 5rem;
+}
+
+.navbar-nav .nav-link {
+  padding: 3px 20px;
+  transition: all 300ms;
+  border: 2px solid transparent;
+}
+
+.navbar-nav .nav-item.active a {
+  border: 2px solid var(--color2);
+  color: var(--color2);
+}
+
+.navbar-nav .nav-link:hover {
+  border: 2px solid var(--color2);
+  color: var(--color2);
+}
+
+.navbar-toggler {
+  border: 0;
+  color: white;
+  box-shadow: none;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  border: 1px solid var(--color2);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: none;
+  color: var(--color2);
+}
+
+#home {
+  background-image: url("../image/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+  height: 350px;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+
+.form-control:focus {
+  background-color: var(--color1);
+  box-shadow: none;
+  border-color: var(--color1);
+  color: white;
+}
+
+.search {
+  background-color: var(--color1);
+  border: 5px solid var(--color1);
+  color: white;
+}
+
+.btn-find {
+  background-color: var(--color2);
+  border: 0;
+  top: 4px;
+  right: 4px;
+}
+
+.card {
+  padding: 0;
+  border: 0;
+}
+
+.day1 {
+  background-color: var(--color3);
+  color: white;
+  font-family: var(--font1);
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+
+.day2 {
+  background-color: var(--color4);
+  color: white;
+  font-family: var(--font1);
+}
+
+.tempofcard {
+  font-size: 5.7rem;
+  font-weight: 800;
+  font-family: var(--font1);
+}
+
+.weather {
+  color: var(--color2);
+}
+
+#footer {
+  background-color: var(--color4);
+}
+
+#rowOfwearher {
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.8;
+  vertical-align: middle;
+  background-color: var(--color1);
+  color: var(--color2);
+  border-radius: 50%;
+  transition: all 500ms;
+}
+
+.social-links a:hover {
+  color: white;
+  background-color: var(--color2);
+}
+.head {
+  background-color: var(--color4);
+}
+.head a:after {
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 7px;
+  background: url(https://routeweather.netlify.app/images/arrow-gray.png)
+    no-repeat;
+  margin: 0 10px;
+}
+.contact-details {
+  background-color: #262936;
+}
+.map {
+  height: 14rem;
+}
+.contact-info img {
+  width: 16px;
+  margin: 10px;
+}
+.row input {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 4rem;
+  width: 100%;
+  margin: 5px 0;
+  border: 2px solid var(--color3);
+  color: white;
+}
+.contact-form  .textarea{
+  width: 100%;
+  margin: 5px 0;
+  border: 2px solid var(--color3);
+  color: white;
+}
+.row input:hover,
+.contact-form  textarea:hover,
+.contact-form  textarea:focus,
+.row input:focus-visible {
+  border-color: var(--color2);
+}
+body {
+  position: relative;
+}
